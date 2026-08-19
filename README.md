@@ -23,12 +23,12 @@ Every developer needs ai documentation writer — but existing tools are either 
 
 ## Features
 
-- **Auto-generate README files** — Auto-generate README files
-- **API documentation from code** — API documentation from code
-- **Inline comment generation** — Inline comment generation
-- **Multiple output formats (Markdown, HTML)** — Multiple output formats (Markdown, HTML)
-- **Supports Go, Python, JavaScript, Java** — Supports Go, Python, JavaScript, Java
-- **Customizable templates** — Customizable templates
+- Auto-generate README files
+- API documentation from code
+- Inline comment generation
+- Multiple output formats (Markdown, HTML)
+- Supports Go, Python, JavaScript, Java
+- Customizable templates
 
 ## Quick Start
 

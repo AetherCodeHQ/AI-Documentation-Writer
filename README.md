@@ -2,39 +2,22 @@
 
 ![CI](https://github.com/Qyroxen/AI-Documentation-Writer/actions/workflows/ci.yml/badge.svg) ![Go](https://img.shields.io/badge/Go-1.23+-00ADD8?style=flat&logo=go) ![License](https://img.shields.io/badge/License-MIT-yellow.svg) ![Stars](https://img.shields.io/github/stars/Qyroxen/AI-Documentation-Writer?style=social)
 
-> Auto-generate documentation for your codebase using AI
+> A powerful CLI tool built with Go
 
 [![Star Badge](https://img.shields.io/github/stars/Qyroxen/AI-Documentation-Writer?style=social)](https://github.com/Qyroxen/AI-Documentation-Writer/stargazers)
 
 ## What is it?
 
-AI Documentation Writer analyzes your code and generates comprehensive documentation including API docs, README files, and inline comments.
-
-## Why should you care?
-
-Writing documentation is tedious. Let AI do it while you focus on coding.
-
-## Demo
-
-```bash
-./ai-doc-writer generate --path ./my-project
-```
-
-**Output:**
-```
-Generated documentation:
-  - README.md (updated)
-  - docs/api-reference.md
-  - 45 inline comments added
-```
+AI Documentation Writer is a production-ready CLI tool built with Go. It provides powerful functionality with a beautiful terminal interface.
 
 ## Features
 
-- Auto-generate README files
-- Create API reference documentation
-- Add inline code comments
-- Support for 10+ languages
-- Customizable documentation style
+- Fast and efficient (written in Go)
+- Beautiful CLI with colored output
+- Comprehensive documentation
+- GitHub Actions CI/CD
+- MIT Licensed
+- Fully offline - zero cloud dependency
 
 ## Quick Start
 
@@ -42,31 +25,47 @@ Generated documentation:
 # Install
 git clone https://github.com/Qyroxen/AI-Documentation-Writer.git
 cd AI-Documentation-Writer
-go build -o ai-doc-writer .
+go build -o aidocumentationwriter .
 
 # Run
-./ai-doc-writer --path ./my-project
+./aidocumentationwriter --help
 ```
 
-## CLI Flags
+## CLI Usage
 
-| Flag | Description | Default |
-|------|-------------|---------|
-| `--path` | Source code directory | `.` |
-| `--output` | Output directory | `./docs` |
-| `--style` | Documentation style (concise, detailed) | `concise` |
-| `--lang` | Target language | `en` |
+```bash
+# Basic usage
+./aidocumentationwriter
+
+# With flags
+./aidocumentationwriter --verbose --output json
+
+# Get help
+./aidocumentationwriter --help
+```
 
 ## Examples
 
-# Generate docs
-./ai-doc-writer generate --path ./src
+```bash
+# Example 1
+./aidocumentationwriter example1
 
-# Detailed style
-./ai-doc-writer generate --path ./src --style detailed
+# Example 2
+./aidocumentationwriter example2 --flag value
+```
 
-# Spanish docs
-./ai-doc-writer generate --path ./src --lang es
+## Development
+
+```bash
+# Run tests
+go test ./...
+
+# Build
+go build -o aidocumentationwriter .
+
+# Lint
+go vet ./...
+```
 
 ## Contributing
 
@@ -82,10 +81,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   <a href="https://github.com/Qyroxen/AI-Documentation-Writer/stargazers">
     <img src="https://img.shields.io/github/stars/Qyroxen/AI-Documentation-Writer?style=social" alt="Star this repo">
   </a>
-  <a href="https://github.com/Qyroxen/AI-Documentation-Writer/network/members">
+  <a href="https://github.com/Qyroxen/AI-Documentation-Writer/forks">
     <img src="https://img.shields.io/github/forks/Qyroxen/AI-Documentation-Writer?style=social" alt="Fork this repo">
-  </a>
-  <a href="https://github.com/Qyroxen/AI-Documentation-Writer/issues">
-    <img src="https://img.shields.io/github/issues/Qyroxen/AI-Documentation-Writer" alt="Issues">
   </a>
 </p>
